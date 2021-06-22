@@ -1,10 +1,10 @@
 # CRON job to fire few events like sending message notifications and deleting
 # inactive users with unconfirmed email
 
-name: Run every 5 minutes
+name: Run every day at 5am IST
 on:
   schedule:
-    - cron: "30 16 * * *"
+    - cron: "30 23 * * *"
     
 jobs:
   deleteInactiveProfiles:
