@@ -12,5 +12,5 @@ jobs:
     steps:
     - run: curl -s -X POST "https://heyspoil.me/api/cron/send-message-notifications?token=${TOKEN}"
       env: 
-        TOKEN: ${{ secrets.TOKEN }}
+        TOKEN: ${{ secrets.CRON_API_SECRET }}
       
